@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abadvideography | Videography Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Sections */
+        section {
+            background: white;
+            margin: 30px 0;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #1a1a2e;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #e63946;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Video Grid */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .video-card {
+            background: #f9f9f9;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .video-card iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: none;
+        }
+
+        .video-card h3 {
+            padding: 15px 15px 5px;
+            font-size: 1.1rem;
+        }
+
+        .video-card p {
+            padding: 0 15px 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        .contact-info a {
+            color: #e63946;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            background: #e63946;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #c1121f;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #1a1a2e;
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            section { padding: 25px; }
+            .video-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Xean Abad Videography</h1>
+        <p>Capturing moments that matter | Sony ZV-1 | Available for hire</p>
+    </div>
+</header>
+
+<div class="container">
+    <!-- About Section -->
+    <section>
+        <h2>About Me</h2>
+        <p>Hi! I'm Xean Abad, a 15-year-old videographer passionate about creating high-quality video content. I specialize in social media content, event recaps, and promotional videos for local businesses. I shoot with a Sony ZV-1 to give your videos that professional cinematic look.</p>
+        <p>📍 Based in Gainesville | 📹 Available for local projects</p>
+        <a href="#contact" class="btn">Hire Me →</a>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section>
+        <h2>My Work</h2>
+        <div class="video-grid">
+            <!-- Replace the YouTube links below with YOUR video embeds -->
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" allowfullscreen></iframe>
+                <h3>Sample Project 1</h3>
+                <p>Short description of this video—what it is, where it was filmed, etc.</p>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" allowfullscreen></iframe>
+                <h3>Sample Project 2</h3>
+                <p>Short description of this video—what it is, where it was filmed, etc.</p>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3" allowfullscreen></iframe>
+                <h3>Sample Project 3</h3>
+                <p>Short description of this video—what it is, where it was filmed, etc.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p>📧 <a href="mailto:yourvideography@gmail.com">abadvideography@gmail.com</a></p>
+            <p>📱 Text/call: 352-792-9010</p>
+            <p>📍 Serving Gainesville area</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div class="container">
+        <p>© 2025 Xean Abad Videography. All rights reserved.</p>
+        <p>Shot on Sony ZV-1 | Edited with CapCut</p>
+    </div>
+</footer>
+
+</body>
+</html>
